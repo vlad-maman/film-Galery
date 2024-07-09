@@ -1,0 +1,56 @@
+footer{
+    min-height: 15%;
+}
+
+.HEADER{
+    max-height: 20%;
+}
+
+main{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.movieeeee > p {
+ 
+    margin-bottom: 50px;
+    width: fit-content;
+    
+}
+
+.pravopraov{
+    color: rgb(165, 161, 152);
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.pravo-amail{
+    position: relative;
+    left: 3%;
+    font-size:0px;
+    font-weight:100;
+   background-color: rgb(148, 143, 11);
+    font-size: 20px;
+   
+}
+
+.outer-container{
+    height: 2%;
+   }
+   
+   
+
+.pravo-div{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+
+}
+
+.movieeeee > p > span {
+ 
+  color: bisque;
+    cursor: pointer;
+}
