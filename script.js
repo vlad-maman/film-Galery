@@ -16,7 +16,9 @@ const findMovies = () => {
           if (searchTerm.length > 0) {
                     searchList.classList.remove("hide-search-list"); // show the suggestion box
                     fetchMovies(searchTerm); //Load movies from API
+                   
           } else {
+            
                     searchList.classList.add("hide-search-list"); // Hide the suggestion box if no character is present in the search box
           }
 };
@@ -64,7 +66,7 @@ const displayMoviesList = (movies) => {
                     if (movies[i].Poster != "N/A") {
                               moviePoster = movies[i].Poster; // Set image address
                     } else {
-                              moviePoster = "notFound.png"; //If image not found then set notFound image
+                              moviePoster = "1_AC9frN1qFnn-I2JCycN8fw.png"; //If image not found then set notFound image
                     }
 
                     //Add results to suggestions list
@@ -299,3 +301,32 @@ allMoviesAll.forEach(item => {
 
 
 });
+
+
+let cookies = document.cookie.split('; ')
+let isCookieSaved = false
+let user_name = 0
+for (let i = 0; i < cookies.length; i += 1) {
+    if (cookies[i].split('=')[0] == 'user_name') {
+        isCookieSaved = true
+        user_name = cookies[i].split('=')[1]
+        console.log(user_name)
+        break
+    }
+}
+
+if (isCookieSaved) {
+    document.querySelector('.input_field').style.display = 'none'
+    document.querySelector('button').style.display = 'none'
+    document.querySelector('h1').style.display = 'block'
+    document.querySelector('h1').innerHTML =  user_name
+} else {
+    document.querySelector('button').addEventListener('click', function() {
+        document.cookie = `user_name=${document.querySelector('.input_field').value};max-age=5`
+        document.querySelector('.input_field').style.display = 'none'
+        document.querySelector('button').style.display = 'none'
+        document.querySelector('h1').style.display = 'block'
+        document.querySelector('h1').innerHTML = "Привіт" + " " + document.querySelector('.input_field').value
+    })
+}
+

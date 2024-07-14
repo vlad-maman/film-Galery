@@ -26,11 +26,14 @@
 
 .htmllogo{
     position: absolute;
-    top: 1%;
+    top: 24px;
     left: 5%;
 }
 
 #fav{
-    top: 1.2%;
+    top: 40px;
 }
 
+.outer-container{
+    min-height: fit-content;
+}
