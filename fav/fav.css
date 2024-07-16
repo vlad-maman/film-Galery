@@ -37,3 +37,10 @@
 .outer-container{
     min-height: fit-content;
 }
+
+@media (max-width: 800px) {
+    .burg{
+        position: absolute;
+        top: 0%;
+    }
+}

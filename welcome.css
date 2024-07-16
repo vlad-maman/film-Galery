@@ -1,7 +1,7 @@
 
 
 
-.container > h1{
+.containerr > .h1{
     color: rgb(184, 184, 184);
     font-size: 50px;
   
@@ -40,12 +40,53 @@
     background-size: cover;
   }
   
-  h1 {
+  .h1{
     color: white;
     font-size: 8em;
   }
+
+
+
+
+  @media (max-width:569px) {
+    .h1{
+      color: white;
+      font-size: 7em;
+    }
   
-  h1 span {
+  }
+
+  @media (max-width:505px) {
+    .h1{
+      color: white;
+      font-size: 5.5em;
+    }
+  
+  }
+
+
+  @media (max-width:395px) {
+    .h1{
+      color: white;
+      font-size: 4.5em;
+    }
+  
+  }
+
+  @media (max-width:320px) {
+    .h1{
+      color: white;
+      font-size: 4em;
+    }
+  
+  }
+  
+  
+  
+
+
+  
+  .h1 span {
     background: linear-gradient(rgba(0, 0, 0, 0) 65%, rgba(255, 255, 255, 0.3) 35%)
   }
   
@@ -140,6 +181,8 @@
   /* the important styles */
   
   .arrow-wrap {
+
+
     position:absolute;
     z-index:1;
     left:50%;
@@ -153,9 +196,12 @@
     font-size:0.5em;
     display:block;
     box-shadow:0px 0px 5px 0px #333;
+    display: none;
   }
   
   .arrow {
+    
+
     float:left;
     position:relative;
     width: 0px;
@@ -197,3 +243,312 @@
     animation: arrows 2.8s 0.4s;
     animation-delay: 3s;
   }
+
+  
+.containerr{
+  z-index: 100;
+  position: absolute;
+  top: 54%;
+}
+
+.h2{
+display: inline-block;
+  background: linear-gradient(rgba(0, 0, 0, 0) 65%, rgba(255, 255, 255, 0.3) 35%);
+  font-style: italic;
+  position: relative;
+  left: 40px;
+ 
+  color: #000;
+
+}
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.wrapper {
+  display:none;
+  justify-content:center;
+  align-items: center;
+  height:100vh;
+  width:100%;
+  background:url('http://codingstella.com/wp-content/uploads/2024/01/download-5.jpeg') no-repeat;
+  background-size:cover;
+  background-position:center;
+  animation:animateBg 5s linear infinite;
+}
+@keyframes animateBg {
+  100% {
+    filter:hue-rotate(360deg);
+  }
+}
+.login-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border-radius: 15px;
+  border: 2px solid rgba(255,255,255,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(15px);
+}
+h2 {
+  font-size:2em;
+  color:#fff;
+  text-align:center;
+}
+.input-box {
+  position:relative;
+  width:310px;
+  margin:30px 0;
+  border-bottom:1px solid #fff;
+  background: transparent;
+}
+.input-box label {
+  position:absolute;
+  top:50%;
+  left:5px;
+  transform:translateY(-50%);
+  font-size:1em;
+  color:#fff;
+  pointer-events:none;
+  transition:.5s;
+}
+.input-box input:focus  ~ .label,
+.input-box input:valid  ~ label
+ {
+  top:-5px;
+}
+
+
+
+.input-box input:focus  ~ .word
+{
+  top: 20px;
+  opacity: 1;
+}
+
+.word{
+  opacity: 0;
+}
+
+.input-box input {
+  width:100%;
+  height:50px;
+  background:transparent;
+  border:none;
+  outline:none;
+  font-size:1em;
+  color:#fff;
+  padding:0 35px 0 5px;
+}
+.input-box .icon {
+  position:absolute;
+  right:8px;
+  top:50%;
+  color: #fff;
+  transform: translateY(-50%);
+}
+.remember-forgot {
+  margin:-15px 0 15px;
+  font-size:.9em;
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+}
+.remember-forgot label input {
+  margin-right:3px;
+}
+.remember-forgot a {
+  color:#fff;
+  text-decoration:none;
+}
+.remember-forgot a:hover {
+  text-decoration:underline;
+}
+button {
+  width:100%;
+  height:40px;
+  background-color:#fff;
+  border:none;
+  border-radius:40px;
+  cursor:pointer;
+  font-size:1em;
+  color:#000;
+  font-weight:500;
+}
+.register-link {
+  font-size:.9em;
+  color:#fff;
+  text-align:center;
+  margin:25px 0 10px;
+}
+.register-link p a {
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+.register-link p a:hover {
+  text-decoration:underline;
+}
+@media (max-width:500px) {
+  .login-box {
+    width:100%;
+    height:100vh;
+    border:none;
+    border-radius:0;
+  }
+  .input-box {
+    width:290px;
+  }
+}
+
+
+
+
+
+
+.animated-button {
+  position: absolute;
+  top: 85%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  width: 160px;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #1f387e;
+  box-shadow: 0 0 0 2px #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 100;
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #1f387e;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #c5e5e4;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #1f387e;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 2%;
+  top: 1%;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(44, 44, 44);
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: .1s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+  border: none;
+  z-index: 5;
+}
+
+.bell {
+  width: 18px;
+}
+
+.bell path {
+  fill: white;
+}
+
+.button:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+.button:hover .bell {
+  animation: bellRing 0.9s both;
+}
+
+
+
+.button:active {
+  transform: scale(0.9);
+}

@@ -62,7 +62,16 @@
   
   @media(max-width:450px){
     .outer-container{
-        min-height: 154%;
+        min-height: 155%;
+      }
+      
+      
+  }
+ 
+
+  @media(max-width:379px){
+    .outer-container{
+        min-height: 182%;
       }
       
       
@@ -78,7 +87,7 @@
 
     position: absolute;
     left: 0;
-     bottom: 0;
+     top: 15%;
       padding: 3rem 0;
       background:rgb(0, 0, 0, .3) ;
       border-radius: 18px;
