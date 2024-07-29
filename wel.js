@@ -3,6 +3,7 @@ let buttonSEND = document.querySelector('.buttonn')
 let inputFIELD =  document.querySelector('.input_field')
 let Name = document.querySelector('.hhh')
 let SurName = document.querySelector('.hhhh')
+
 let cookies = document.cookie.split('; ')
 let isCookieSaved = false
 let user_name = 0
@@ -116,3 +117,55 @@ LogInBtn.addEventListener('click', function(){
 })
 
 
+let conteinetIFLOno = document.querySelector('.conPROFILElognot')
+let CloseconLogno = document.querySelector('.closeconnoLog')
+
+
+CloseconLogno.addEventListener('click', function(){
+    conteinetIFLOno.style.display = 'none'
+})
+
+
+
+
+
+let ProfeleLogIn = document.querySelector('.acounopencoIFNO')
+
+
+
+   ProfeleLogIn.addEventListener('click', function(){
+    if(isCookieSaved2 === true){
+       location.href ="http://127.0.0.1:5501/Acount/acaunt.html"
+
+    }else{
+         conteinetIFLOno.style.display = 'flex'
+        
+       }
+        })
+
+        let LogInBtn2 = document.querySelector('.animated-button2')
+
+
+        LogInBtn2.addEventListener('click', function(){
+            welcomeNAME.style.opacity = 0
+            WRAPPERlogIn.style.opacity = 1
+            welcomeNAME.style.display = 'none'
+            WRAPPERlogIn.style.display = 'flex'
+                conteinetIFLOno.style.display = 'none'
+        })
+
+
+
+
+
+
+
+        let IMG_Logo = document.cookie
+        .split("; ")
+        .find((row) => row.startsWith("IMG_Logo="))
+        ?.split("=")[1];
+
+        console.log(document.cookie)
+        
+
+        
