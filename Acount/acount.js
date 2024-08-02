@@ -81,9 +81,9 @@ function DontHaveName() {
 
     let photomas = [
           
-        "/imgProfile/(.jpg ",
-        "/imgProfile/2abedb36-1dd1-43b3-a2b8-30e3bd6a3a77.jpg ",
-        "/imgProfile/4fb377d7-28a9-4ffd-b207-008719b72deb.jpg ",
+        "imgProfile/(.jpg ",
+        "imgProfile/2abedb36-1dd1-43b3-a2b8-30e3bd6a3a77.jpg ",
+        "imgProfile/4fb377d7-28a9-4ffd-b207-008719b72deb.jpg ",
         "/imgProfile/05d7f474-3c67-467b-be14-b026d7e31b28.jpg ",
         "/imgProfile/7d7dde30-3999-4c4f-9283-c10fa82b1215.jpg",
         "/imgProfile/48b80b58-5cba-4c0e-81f8-40424c1f9f7b.jpg ",
