@@ -22,7 +22,7 @@ a {
 
 body {
   min-width: 308px;
-  background: url(/BackGrounds/Body.ground.jpg);
+  background: url(./BackGrounds/Body.ground.jpg);
   background-size:cover;
 
  
@@ -1061,6 +1061,7 @@ border-radius: 18px;
   border-left: 4px dashed #1f1f1f;
   border-right: 4px dashed #1f1f1f;
   transition: all 500ms;
+  background: url(/Hamburger_icon.svg.png);
 }
 
 
@@ -1105,7 +1106,7 @@ border-radius: 18px;
   background-color: black;
   border: 1px solid black;
   border-radius: 40px;
-  background-image: url(./Acount/8847419.png);
+  background-image: url(../Acount/8847419.png);
   background-size: 100%;
 
 
