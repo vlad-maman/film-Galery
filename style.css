@@ -18,11 +18,11 @@ a {
   text-decoration: none;
 }
 
-AcounGob
+
 
 body {
   min-width: 308px;
-  background: url(BackGrounds/Body.ground.jpg);
+  background: url(/BackGrounds/Body.ground.jpg);
   background-size:cover;
 
  

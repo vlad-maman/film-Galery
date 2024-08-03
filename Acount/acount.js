@@ -230,7 +230,7 @@ removePhoto.addEventListener('click', function(){
 
     
 
-    phoroREM = '/Acount/8847419.png'
+    phoroREM = '../Acount/8847419.png'
 
     function delete_cookie(lol) {
         document.cookie = `IMG-profile=${lol};max-age=-1`
