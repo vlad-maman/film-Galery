@@ -1061,7 +1061,7 @@ border-radius: 18px;
   border-left: 4px dashed #1f1f1f;
   border-right: 4px dashed #1f1f1f;
   transition: all 500ms;
-  background: url(/Hamburger_icon.svg.png);
+  background: url(./Hamburger_icon.svg.png);
 }
 
 
